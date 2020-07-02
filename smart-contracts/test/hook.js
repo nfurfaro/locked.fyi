@@ -215,7 +215,7 @@ describe('Benchmark prices', () => {
 })
 
 describe('Price Rounding', () => {
-  it('The price for s=11 should be rounded to 1.1', async function () {
+  it('The price for s=12 should be rounded to 1.1', async function () {
     const [wallet, keyPurchaser] = await ethers.getSigners()
     const s = 11
     purchaseHook = await deployHook(s, lockedFyiLock.address)
